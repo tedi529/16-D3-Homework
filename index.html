@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Demographic Visualizations</title>
+    <title>Demographic Visualization</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/d3Style.css">
@@ -14,15 +14,25 @@
 
         <!-- Title -->
         <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h1>Demographic Visualizations</h1>
+            <div class="main-title">
+                <h1><strong>Health Factors vs Demographics</strong></h1>
             </div>        
         </div>
 
         <!-- Visualization -->
         <div class="row">
             <div class="col-xs-12 col-md-9">
-                <div id="scatter"></div>
+                <dim id="scatter"></dim>
+            </div>
+        </div>
+
+        <!-- Analysis -->
+        <div class="row">
+            <div class="analysis-text">
+                <p> The above visualization compares the values of three indicators of health: healthcare rate, obesity rate, and smoker percentagewith three demographic factors: median household income, poverty rate, and median age in all 50 states of the USA.</p>
+                <p> The percentage of people who lack healthcare exhibits a clear negative trend with household income, suggesting that as household income increases, the percentage of the population that lacks healthcare decreases in the 50 states. The trend is positive with the percentage of people that are in poverty, suggesting that the more people there are in poverty, the less health coverage people have.Lack of healthcare does not seem to exhibit any type of trend based on age.</p>
+                <p> The obesity rate exhibits a slight downward trend versus household income: as income increases, obesity rate tends to decrease. The obesity rate exibits a very slight upward trend when graphed against poverty percentage, suggesting states with higher poverty rates also have higher rates of obesity. Obesity rate does not seem to exhibit any trend based on age.</p>
+                <p> The percentage of people who smoke in a given states exhibits a negative trend when compared to the median household income in the state. The trend is reversed when compared to the poverty rate. When ignoring the state of Utah, the smoking rate does not seem to exhibit any type of trend based on age. Utah has a lower smoking rate than any state. </p>
             </div>
         </div>
 
