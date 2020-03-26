@@ -19,6 +19,7 @@ body {
   font-size:40px;
   padding-top: 15px;
 }
+
 .analysis-text {
   font-family: sans-serif;
   font-size: 15px;
@@ -41,4 +42,22 @@ body {
 #footer p {
   margin: 0;
   font-size: 16px;
+}
+
+@media screen and (max-width: 530px) {
+  
+  .main-title h1 {
+    font-family: sans-serif;
+    font-size:25px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .main-title h1 {
+    font-family: sans-serif;
+    font-size:15px;
+    padding-top: 15px;
+  }
 }
